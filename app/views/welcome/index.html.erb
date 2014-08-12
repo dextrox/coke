@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medkosucks</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+	<h1></h1>
+</header>
+
+<%= yield %>
+
+</body>
+</html>
+
+
+<h1>Hola Mundo Egg</h1>
+<h2>Creador: <%= @egg %></h2>
+<p>Soy un Egg!</p>
+
+<% @limit.times do %>
+<p><%= @mensaje %></p>
+<% end %>
